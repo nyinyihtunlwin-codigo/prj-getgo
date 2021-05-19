@@ -25,4 +25,8 @@
     <string name="add_to_calendar">Add to calendar</string>
     <string name="extend">Extend</string>
     <string name="pick_up_car_at">Pick up car at</string>
+    <string name="get_direction">Get Directions</string>
+    <string name="estimated_total">Estimated Total</string>
+    <string name="need_help">Need help?</string>
+    <string name="cancel_this_booking">Cancel this booking</string>
 </resources>
