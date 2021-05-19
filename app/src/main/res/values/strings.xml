@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Prj-GetGo</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rent_a_car">Rent a car</string>
+    <string name="bookings">Bookings</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="account">Account</string>
+    <string name="location">Location</string>
+    <string name="current_location">Current location</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="now">Now</string>
+    <string name="duration">Duration</string>
+    <string name="go">Go</string>
+    <string name="search_results">Search results</string>
 </resources>
