@@ -41,6 +41,8 @@
         android:id="@+id/vBottomBar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_80sdp"
+        android:clickable="true"
+        android:focusable="true"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -79,9 +81,9 @@
 
     <ImageView
         android:id="@+id/ivBookings"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/ic_group23"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:src="@drawable/ic_icodated_white"
         app:layout_constraintBottom_toTopOf="@id/tvBookings"
         app:layout_constraintEnd_toStartOf="@id/col_2"
         app:layout_constraintStart_toEndOf="@id/col_1" />
@@ -100,9 +102,9 @@
 
     <ImageView
         android:id="@+id/ivReferAFriend"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/ic_group23"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:src="@drawable/ic_icotime_white"
         app:layout_constraintBottom_toTopOf="@id/tvReferAFriend"
         app:layout_constraintEnd_toStartOf="@id/col_3"
         app:layout_constraintStart_toEndOf="@id/col_2" />
@@ -121,9 +123,9 @@
 
     <ImageView
         android:id="@+id/ivAccount"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/ic_group23"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:src="@drawable/ic_baseline_settings_24"
         app:layout_constraintBottom_toTopOf="@id/tvReferAFriend"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/col_3" />
@@ -158,6 +160,8 @@
         app:layout_constraintBottom_toTopOf="@id/vBottomBar">
 
         <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -295,6 +299,8 @@
         android:layout_marginBottom="@dimen/_16sdp"
         android:background="@drawable/bg_fab"
         android:elevation="@dimen/_8sdp"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toTopOf="@id/vRentACar"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -305,5 +311,17 @@
             android:scaleType="center"
             android:src="@drawable/ic_icoactionlocate" />
     </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rent_a_car"
+        android:textSize="@dimen/text_regular_3x"
+        android:textColor="@color/colorAccent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vRentACar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
