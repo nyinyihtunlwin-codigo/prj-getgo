@@ -14,6 +14,7 @@ class CarViewHolder(
     }
 
     override fun onClick(v: View?) {
-        carDelegate.onTapCar(mData!!)
+     //   carDelegate.onTapCar(mData!!)
+        carDelegate.onTapCar(Car())
     }
 }

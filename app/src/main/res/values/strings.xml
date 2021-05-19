@@ -18,4 +18,11 @@
     <string name="dot">.</string>
     <string name="rental_fee">Rental fee</string>
     <string name="mileage_fee">Mileage fee</string>
+    <string name="confirmed_caps">CONFIRMED</string>
+    <string name="start_date">Start date</string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="extend">Extend</string>
+    <string name="pick_up_car_at">Pick up car at</string>
 </resources>

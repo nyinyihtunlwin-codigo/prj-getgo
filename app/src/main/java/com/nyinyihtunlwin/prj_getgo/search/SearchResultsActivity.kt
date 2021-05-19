@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.nyinyihtunlwin.prj_getgo.databinding.ActivitySearchResultsBinding
+import com.nyinyihtunlwin.prj_getgo.details.DetailsActivity
 
 class SearchResultsActivity : AppCompatActivity() {
 
@@ -26,7 +27,7 @@ class SearchResultsActivity : AppCompatActivity() {
 
         mAdapter = CarAdapter(this, object : CarDelegate {
             override fun onTapCar(car: Car) {
-
+                startActivity(DetailsActivity.newInstance(this@SearchResultsActivity))
             }
         })
         binding.rvSearchResults.adapter = mAdapter

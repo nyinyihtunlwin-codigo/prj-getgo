@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    tools:context=".details.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icoactioncopy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBookingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="Booking ID : 4423331"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2xx"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/ivCopy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/col_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/col_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/col_5.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mazada 3"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS1000Z"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@drawable/bg_round_light_blue"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/confirmed_caps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_smaller"
+                app:layout_constraintStart_toEndOf="@id/tvModel"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/lbStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/start_date"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvModel" />
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mon, 1 Nov 20"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toStartOf="@id/col_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lbStartDate" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="11:45am"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toStartOf="@id/col_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvStartDate" />
+
+            <TextView
+                android:id="@+id/lbEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/start_date"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small"
+                app:layout_constraintStart_toEndOf="@id/col_1"
+                app:layout_constraintTop_toBottomOf="@id/tvModel" />
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tue, 2 Nov 20"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toStartOf="@id/col_2"
+                app:layout_constraintStart_toEndOf="@id/col_1"
+                app:layout_constraintTop_toBottomOf="@id/lbEndDate" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="11:45am"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toStartOf="@id/col_2"
+                app:layout_constraintStart_toEndOf="@id/col_1"
+                app:layout_constraintTop_toBottomOf="@id/tvEndDate" />
+
+            <RelativeLayout
+                android:id="@+id/rlDuration"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/bg_round_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/col_2"
+                app:layout_constraintTop_toBottomOf="@id/tvModel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/duration"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/tvColon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=":"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_toStartOf="@id/tvColon"
+                    android:text="02"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/tvColon"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHour"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_toStartOf="@id/tvColon"
+                    android:text="@string/days"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smaller" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMin"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/tvColon"
+                    android:text="@string/hours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smaller" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btnAddToCalendar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/bg_round_white_border_grey"
+                app:layout_constraintEnd_toStartOf="@id/col_5.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rlDuration">
+
+                <TextView
+                    android:id="@+id/tvAddToCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add_to_calendar"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/tvAddToCalendar"
+                    android:src="@drawable/ic_baseline_add_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnExtend"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/bg_round_white_border_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/col_5.0"
+                app:layout_constraintTop_toBottomOf="@id/rlDuration">
+
+                <TextView
+                    android:id="@+id/tvExtend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/extend"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_toStartOf="@id/tvExtend"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_access_time_24" />
+            </RelativeLayout>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="1000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAddToCalendar" />
+
+            <TextView
+                android:id="@+id/tvPickUpCarAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/pick_up_car_at"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageSlider" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
