@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchResultsActivity">
+    tools:context=".search.SearchResultsActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/col_1"
@@ -164,5 +164,80 @@
         android:textSize="@dimen/text_regular"
         app:layout_constraintStart_toEndOf="@id/ivTime"
         app:layout_constraintTop_toBottomOf="@id/lbDuration" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="300+"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/tvCarsFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/cars_found"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular"
+        app:layout_constraintStart_toEndOf="@id/tvCount"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_round_white"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/map"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_round_white"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/filter"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btnMap"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFilter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

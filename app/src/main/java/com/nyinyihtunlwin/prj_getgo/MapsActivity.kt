@@ -9,6 +9,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.nyinyihtunlwin.prj_getgo.databinding.ActivityMapsBinding
+import com.nyinyihtunlwin.prj_getgo.search.SearchResultsActivity
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -26,7 +27,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-        binding.btnAlert.setOnClickListener {
+        binding.btnGo.setOnClickListener {
             startActivity(SearchResultsActivity.newInstance(this))
         }
     }

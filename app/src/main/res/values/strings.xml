@@ -12,4 +12,10 @@
     <string name="duration">Duration</string>
     <string name="go">Go</string>
     <string name="search_results">Search results</string>
+    <string name="cars_found">cars found</string>
+    <string name="filter">Filter</string>
+    <string name="map">Map</string>
+    <string name="dot">.</string>
+    <string name="rental_fee">Rental fee</string>
+    <string name="mileage_fee">Mileage fee</string>
 </resources>

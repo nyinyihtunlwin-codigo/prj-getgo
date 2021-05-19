@@ -273,6 +273,7 @@
                 android:textSize="@dimen/text_regular" />
 
             <TextView
+                android:id="@+id/btnGo"
                 android:layout_width="@dimen/_50sdp"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_below="@id/divider"
